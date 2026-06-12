@@ -1,99 +1,133 @@
-# 🛡️ ShieldURL — AI-Powered URL Threat Detector
+# BharatShield-CyberRakshak 🇮🇳
 
-A hackathon project that detects phishing, malware, and suspicious URLs using
-Machine Learning, VirusTotal, and IP intelligence.
+## Project Overview
 
----
-
-## 📁 Project Structure
-
-```
-shieldurl/
-├── ml-model/        ← Python Flask ML API
-├── backend/         ← Node.js Express API
-├── frontend/        ← React dashboard
-└── extension/       ← Chrome extension
-```
+BharatShield-CyberRakshak is an AI-powered cybersecurity platform designed to protect Indian users from phishing attacks, fraudulent websites, scam links, fake government portals, UPI frauds, and malicious WhatsApp messages. The system analyzes URLs using machine learning techniques and provides instant risk assessment to help users avoid online scams.
 
 ---
 
-## 🚀 Setup Instructions
+## Problem Statement
 
-### Step 1 — Start the ML Model (Python)
+Cyber frauds in India are increasing rapidly through phishing websites, fake government portals, fake job offers, UPI scams, and malicious WhatsApp links. Many users are unable to identify suspicious links before becoming victims of fraud.
+
+There is a need for a simple and intelligent system that can detect potentially dangerous URLs and warn users before they interact with them.
+
+---
+
+## Proposed Solution
+
+BharatShield-CyberRakshak uses Machine Learning, URL feature analysis, and threat intelligence techniques to analyze URLs and classify them as Safe, Suspicious, or Dangerous.
+
+The platform also includes a WhatsApp Scanner that extracts links from messages and evaluates their risk level, helping users identify scam messages before clicking on malicious links.
+
+---
+
+## Features
+
+* URL Safety Scanner
+* AI-based Fraud URL Detection
+* Indian Scam Pattern Detection
+* WhatsApp Scam Link Scanner
+* Risk Classification (Safe / Suspicious / Dangerous)
+* Scan History Tracking
+* Security Statistics Dashboard
+* MongoDB-based Data Storage
+* Cybercrime Reporting Guidance
+
+---
+
+## Technology Stack
+
+### Frontend
+
+* React.js
+* Vite
+* CSS
+
+### Backend
+
+* Node.js
+* Express.js
+
+### Database
+
+* MongoDB Atlas
+
+### Machine Learning
+
+* Python
+* Scikit-Learn
+* Pickle Model
+
+---
+
+## Setup & Usage Instructions
+
+### Clone Repository
 
 ```bash
-cd ml-model
+git clone <repository-url>
+```
+
+### Backend Setup
+
+```bash
+cd shieldurl/backend
+npm install
+npm run dev
+```
+
+### Frontend Setup
+
+```bash
+cd shieldurl/frontend
+npm install
+npm run dev
+```
+
+### ML Model Setup
+
+```bash
+cd shieldurl/ml-model
 pip install -r requirements.txt
 python app.py
-# Running on http://localhost:5001
 ```
 
-### Step 2 — Start the Backend (Node.js)
+### Environment Variables
 
-```bash
-cd backend
-npm install
-# Edit .env and add your API keys (optional for demo)
-npm run dev
-# Running on http://localhost:3001
+Create a `.env` file inside the backend folder:
+
+```env
+PORT=3001
+MONGO_URI=your_mongodb_connection_string
+ML_URL=http://localhost:5001/predict
 ```
 
-### Step 3 — Start the Frontend (React)
+---
 
-```bash
-cd frontend
-npm install
-npm run dev
-# Open http://localhost:5173
-```
+## Team Details
 
-### Step 4 — Load the Chrome Extension
+Team Name: BharatShield-CyberRakshak
 
-1. Open Chrome → go to `chrome://extensions`
-2. Enable **Developer Mode** (top right)
-3. Click **"Load unpacked"**
-4. Select the `extension/` folder
-5. The ShieldURL icon appears in your toolbar!
+Team Members:
+
+* Jidnyasa Gole
+* Sakshi Mali
+* Sharvari Pawar
+* Patyetanvi (GitHub Contributor)
 
 ---
 
-## 🔑 Free API Keys (Optional but recommended)
+## Future Enhancements
 
-| Service      | URL                              | What it adds           |
-|--------------|----------------------------------|------------------------|
-| VirusTotal   | https://virustotal.com/gui/join  | 70+ antivirus engines  |
-| IPInfo       | https://ipinfo.io/signup         | IP geolocation data    |
-
-Add them to `backend/.env`.
-
----
-
-## ✨ Features
-
-- **AI phishing score** — ML model trained on URL patterns
-- **VirusTotal scan** — checks against 70+ security engines
-- **IP geolocation** — shows where the server is located
-- **Scan history** — all past scans saved in MongoDB
-- **Dashboard stats** — total scans, threat counts, breakdown chart
-- **Chrome extension** — right-click any link → instant scan
+* Browser Extension Integration
+* Real-time Scam Database
+* SMS Scam Detection
+* QR Code Security Scanner
+* Multi-language Support
 
 ---
 
-## 🏗️ Tech Stack
+## Conclusion
 
-| Layer     | Technology                        |
-|-----------|-----------------------------------|
-| ML Model  | Python, Flask, scikit-learn       |
-| Backend   | Node.js, Express, MongoDB         |
-| Frontend  | React, Vite, CSS                  |
-| Extension | Chrome Extension API (Manifest v3)|
-
----
-
-## 🎯 Demo Flow (for judges)
-
-1. Open the dashboard
-2. Paste a suspicious URL (e.g. from phishtank.org)
-3. Show the risk score, VT results, and IP location
-4. Right-click a link in Chrome → "Check with ShieldURL"
-5. Show scan history and stats dashboard
+BharatShield-CyberRakshak aims to make the internet safer for Indian users by providing quick and intelligent scam detection. The platform empowers users to identify threats before becoming victims of cyber fraud.
