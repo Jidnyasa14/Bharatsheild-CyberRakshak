@@ -14,7 +14,7 @@ export default function App() {
         <div className="nav-brand">
           <span className="shield">🛡️</span>
           <div>
-            <span className="brand-name">CyberShield India</span>
+            <span className="brand-name">BharatShield-CyberRakshak</span>
             <span className="brand-tag">🇮🇳 Protecting Indians Online</span>
           </div>
         </div>
@@ -44,7 +44,7 @@ export default function App() {
       </main>
 
       <footer className="footer">
-        <p>🛡️ CyberShield India — Built to protect Indians from cyber scams</p>
+        <p>🛡️ BharatShield-CyberRakshak — Built to protect Indians from cyber scams</p>
         <p className="footer-sub">If you've been scammed call: <strong>1930</strong> (National Cyber Crime Helpline)</p>
       </footer>
     </div>
