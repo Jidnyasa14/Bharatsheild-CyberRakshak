@@ -60,6 +60,25 @@ The platform also includes a WhatsApp Scanner that extracts links from messages 
 * Pickle Model
 
 ---
+# BharatShield-CyberRakshak
+
+AI-powered cybersecurity platform developed by Team The Innovators (S2TJ).
+
+## Live Demo
+https://bharatsheild-cyber-rakshak.vercel.app/
+
+## Demo Video
+https://youtu.be/NRsTapInlPA?si=X0TVpnKfS5GQfIh-
+
+## Features
+- URL Threat Detection
+- AI Phishing Analysis
+- WhatsApp Scam Scanner
+- Cyber Awareness Dashboard
+- Mobile Responsive UI
+
+## Team
+The Innovators (S2TJ)
 
 ## Setup & Usage Instructions
 
