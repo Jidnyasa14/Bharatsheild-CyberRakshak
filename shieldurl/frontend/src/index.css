@@ -211,3 +211,46 @@ body {
 /* ── Footer ── */
 .footer { background: #0f172a; color: #94a3b8; text-align: center; padding: 20px; font-size: 13px; margin-top: 40px; }
 .footer-sub { margin-top: 6px; color: #f97316; font-size: 13px; }
+
+@media (max-width: 768px) {
+
+  .navbar {
+    flex-direction: column;
+    gap: 12px;
+    padding: 12px;
+  }
+
+  .nav-links {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8px;
+  }
+
+  .brand-name {
+    font-size: 22px;
+  }
+
+  .input-row {
+    flex-direction: column;
+  }
+
+  .url-input {
+    width: 100%;
+  }
+
+  .scan-btn {
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .stats-bar {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .result-grid {
+    grid-template-columns: 1fr;
+  }
+}
